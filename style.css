@@ -58,8 +58,12 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
+.container .form.sign-in-form .wrapper {
+    transform: translate(100%);
+}
 .container .form h1 {
   font-family: 'Montserrat';
   font-size: 40px;
@@ -111,6 +115,7 @@ section{
   width: 50%;
   height: 100%;
   overflow: hidden;
+  transition: .7s ease-in-out transform;
 }
 
 .container .overlay-container .overlay {
@@ -126,6 +131,7 @@ section{
   justify-content: center;
   height: 100%;
   z-index: 1;
+  transition: .7s ease-in-out transform;
 }
 
 .container .overlay-container .overlay::after{
