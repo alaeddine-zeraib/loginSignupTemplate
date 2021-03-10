@@ -9,10 +9,12 @@ signInButton.addEventListener('click', () => {
     overlayContainer.style.transform = 'translateX(100%)';
     overlay.style.transform = 'translateX(-50%)';
     signInForm.classList.add('active');
+    signUpForm.classList.remove('active');
 });
 
 signUpButton.addEventListener('click', () => {
     overlayContainer.style.transform = 'translateX(0%)';
     overlay.style.transform = 'translateX(0%)';
     signUpForm.classList.add('active');
+    signInForm.classList.remove('active');
 });

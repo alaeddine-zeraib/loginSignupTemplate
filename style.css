@@ -26,6 +26,7 @@ section{
   justify-content: center;
   background-color: cadetblue;
   position: relative;
+  overflow: hidden;
 }
 
 .container .form{
@@ -39,6 +40,7 @@ section{
   align-items: center;
   justify-content: center;
   background-color: #f5f6f7;
+  overflow: hidden;
 }
 
 .container .form.sign-in-form{
@@ -59,11 +61,25 @@ section{
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: .7s ease-in-out transform;
 }
 
 .container .form.sign-in-form .wrapper {
-    transform: translate(100%);
+    transform: translateX(100%);
 }
+
+.container .form.form.sign-in-form.active .wrapper {
+  transform: translateX(0);
+}
+
+.container .form.sign-up-form .wrapper {
+  transform: translateX(-100%);
+}
+
+.container .form.form.sign-up-form.active .wrapper {
+transform: translateX(0);
+}
+
 .container .form h1 {
   font-family: 'Montserrat';
   font-size: 40px;
